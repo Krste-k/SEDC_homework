@@ -1,0 +1,143 @@
+  /* ke koristime gird */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+  background-color: rgb(58, 52, 52);
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+   
+
+}
+/* @keyframes bg {
+    0% {
+        color: aliceblue;
+        background: rgb(41, 172, 117);
+      border-radius: 20% 20%;
+    }
+
+    25% {
+        color: black;
+        background: rgb(255, 47, 47);
+      border-radius: 40% 40%;
+
+    }
+
+    50% {
+        color:aquamarine ;
+        background: rgba(0, 4, 234, 0.318);
+      border-radius: 60% 60%;
+
+    }
+
+    75% {
+        color: yellowgreen;
+        background: rgb(62, 246, 0);
+        text-shadow: 5px 10px 4px black;
+      border-radius: 80% 80%;
+
+    }
+    100% {
+        color: deepskyblue;
+        background: rgb(0, 255, 229);
+        box-shadow: 10px 15px 10px 10px black;
+      border-radius: 100% 100%;
+
+        }
+} */
+
+.mainContainer {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+background-color: deepskyblue;   
+border: 30px groove rgb(113, 112, 112);
+box-shadow: 10px 30px 30px;
+border-radius: 20px;
+z-index: 2;
+}
+
+.mainContainer > button {
+    font-size: 2rem;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: rgb(76, 75, 75);
+    outline: none;
+
+
+    
+}
+
+.mainContainer>button:hover {
+    background-color: rgb(244, 216, 216)!important;
+}
+.mainContainer > button:active{
+    border-radius: 50px;
+   background-color: black !important;
+   color: red;
+
+}
+
+.bigButton{
+    grid-column: span 2;
+    background-color: rgb(157, 186, 157)!important;
+  
+}
+
+.screen {
+    grid-column:1/-1;
+    background-color: rgb(57, 142, 67);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    /* animation: bg 10s infinite linear; */
+
+}
+/* @keyframes bg {
+    0% {
+        background: rgb(41, 172, 117);  
+        border-radius: 10px 10px;
+    }
+        
+
+    25% {
+        background: rgb(255, 47, 47);  
+        border-radius: 30px 53px;  }
+
+    50% {
+        background: rgba(0, 4, 234, 0.318);   
+        border-radius: 50px 50px; }
+
+    75% {
+        color: yellowgreen;
+        background: rgb(62, 246, 0);
+        border-radius: 30px 30px;   }
+    100% {
+        color: deepskyblue;
+        background: rgb(0, 255, 229);
+        border-radius: 10px 10px;
+        }
+} */
+
+.screen .screenTop {
+    color: rgb(38, 38, 38);
+    font-size: 1.5rem;
+
+}
+.screen .screenDown {
+    color: rgb(206, 199, 199);
+    font-size: 2.5rem;
+    
+}
