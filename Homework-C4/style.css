@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img/High_resolution_wallpaper_background_ID_77701898967.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+div {
+    width: 400px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(39, 39, 160);
+    margin-bottom: 8%;
+    flex-direction: column;
+    padding-top: 3%;
+    opacity: 80%;
+    border-radius: 10rem;
+    text-shadow: 6px 8px 5px rgb(107, 114, 103);
+    z-index: 2;
+
+    animation: bg 20s infinite linear;
+
+}
+
+@keyframes bg {
+    0% {
+
+        transform: rotatez(10deg);
+    }
+
+    25% {
+        transform: rotatez(20deg);
+    }
+
+    50% {
+
+        transform: rotatez(30deg);
+
+    }
+
+    75% {
+
+        transform: rotatez(40deg);
+
+    }
+
+    100% {
+
+        transform: rotatez(50deg);
+
+    }
+}
+
+div:hover {
+    transform: scalex(1.5);
+
+}
+
+h1 {
+    padding-bottom: 2%;
+}
+
+h2 {
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+    color: red;
+
+}
+
+span {
+    color: rgb(255, 255, 255);
+    padding-bottom: 1em;
+
+
+}
+
+a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-weight: 800;
+    background-color: aquamarine;
+    text-decoration: none;
+    color: #000;
+    font-family: monospace;
+    font-size: 2em;
+    opacity: 50%;
+    text-transform: uppercase;
+}

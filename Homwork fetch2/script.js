@@ -10,6 +10,7 @@
 
 let url = 'https://swapi.dev/api/people/1'
 let createTable = document.getElementById('create')
+
 function keep() {
 
     fetch(url)
@@ -42,4 +43,12 @@ function keep() {
 createTable.addEventListener('click', () => {
     createTable.style.display = 'none';
     keep()
+
 });
+
+// let refresh = document.querySelector('a').style.visibility = 'hidden';
+
+// refresh.addEventListener ('click', () => {
+//     refresh.style.visibility = 'visible';
+//     keep ()
+// } )
