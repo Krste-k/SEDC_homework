@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 5%;
+  
+    background-image: url(./img/cartoon-empty-high-school-college-university-computer-science-classroom-background_33099-125.avif);
+    background-attachment: fixed;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    background-color: blanchedalmond;
+    opacity: 70%;
+    padding: 3%;
+    z-index: 3;
+    border:solid 4px;
+}
+
+table {
+    width: 50%;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    opacity: 90%;
+    margin-bottom: 4%;
+    border: ridge 15px;
+}
+tr {
+    color: rgb(8, 8, 8);
+    font-size: 1.5em;
+    font-weight: 800;
+    z-index: 5;
+}
